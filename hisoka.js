@@ -2767,59 +2767,6 @@ let capt = `⭔ Title: ${judul}
                 ]
                 hisoka.sendListMsg(m.chat, `Please select the menu you want to change!`, hisoka.user.name, `Hello Owner !`, `Click Here`, sections, m)
                 }
-            }
-            break
-            case 'menu': case 'help': case 'asyraf': {
-                anu = `
-Hy ${pushname}
-Saya Mark Botz
-Saya Disini Akan Melayani Anda
-Dengan Fitur Botz Saya/Mark Botz
-Sebelum Mulai... 
-Jangan Lupa Donasi/Subscribe
-YT Owner
-
-All Sosmed Owner :
-YT :
-https://bit.ly/3c0WJz9
-IG :
-https://instagram.com/asyrafsixyouu
-GC OFFICHIAL :
-GROUP 1:
-https://bit.ly/3ax9GjJ
-
-GROUP 2:
-https://bit.ly/3yuGWAi
-
-GROUP 3:
-https://bit.ly/3RlgwJQ`
-                let btn = [{
-                                urlButton: {
-                                    displayText: 'Youtube',
-                                    url: 'https://bit.ly/3c0WJz9'
-                                }
-                            }, {
-                                urlButton: {
-                                    displayText: 'Kandang Bot',
-                                    udl: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Testing Speed',
-                                    id: 'ping'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: ' Owner',
-                                    id: 'owner'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Menu Mark',
-                                    id: 'command'
-                                }
-                            }]
-            }
             break
             case 'command': {
                 anu = `┌──⭓ *INFO BOTZ*
