@@ -536,6 +536,10 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             }
             break
+            case 'huu': case 'anjay': {
+                hisoka.sendMessage(m.chat, { image: { url: 'https://a.uguu.se/tZcMBvgx.webp' }, caption: `` }, { quoted: m })
+            }
+            break
             case 'tqto': case 'thanksto': {
                 m.reply('Tq To :\n@adiwajshing/baileys\nNurutomo\nMhankbarbar\nFaiz\nGimenz\nRayy\nFatihArridho\nPa7rick\nRidhoUhuy\nzhwzein\nCAF-ID\n\Bintang\nAsyraf (Recorder & Fixer)')
             }
@@ -3124,9 +3128,9 @@ let capt = `⭔ Title: ${judul}
                                     url: 'https://instagram.com/asyrafsixyouu'
                                 }
                             }, {
-                                Button: {
+                                callButton: {
                                     displayText: 'Owner Ganz',
-                                    id: 'owner'
+                                    phoneNumber: '+62 819-4694-5315'
                                 }  
                             }, {
                                 quickReplyButton: {
