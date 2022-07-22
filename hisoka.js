@@ -2816,11 +2816,12 @@ https://bit.ly/3RlgwJQ`
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Menu Mark',
-                                    id: 'menumark'
+                                    id: 'command'
                                 }
                             }]
+            }
             break
-            case 'menumark': case 'markbotz': {
+            case 'command': {
                 anu = `┌──⭓ *INFO BOTZ*
 │ ⚙︎ NAME : MARK BOTZ
 │ ⚙︎ MODE : PUBLIC
