@@ -1178,6 +1178,58 @@ break
                 hisoka.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
             }
             break
+            case 'menu': case 'help': {
+                anu = `Hy ${Pushname}
+Saya Mark Botz
+Saya Diciptakan Oleh Asyraf
+Untuk Membantumu
+Tekan Tombol 'Menu Mark'  Dibawah 
+Untuk Menlanjutkan Ke Menu Mark Botz
+
+*All Sosmed Asyraf :*
+YT :
+https://bit.ly/3c0WJz9
+IG :
+https://instagram.com/asyrafsixyouu
+
+*Group Kandang Bot :*
+
+GROUP 1:
+https://bit.ly/3ax9GjJ
+
+GROUP 2:
+https://bit.ly/3yuGWAi
+
+GROUP 3:
+https://bit.ly/3RlgwJQ`
+                let btn = [{
+                                urlButton: {
+                                    displayText: 'Youtube',
+                                    url: 'https://bit.ly/3c0WJz9'
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'Group Botz',
+                                    url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Status Bot',
+                                    id: 'ping'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Owner Ganz',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Menu Mark',
+                                    id: 'command'
+                                }
+                            }]
+            }
+            break
             case 'bcgc': case 'bcgroup': {
                 if (!isCreator) throw mess.owner
                 if (!text) throw `Text mana?\n\nExample : ${prefix + command} fatih-san`
@@ -1190,17 +1242,17 @@ break
                     let btn = [{
                                 urlButton: {
                                     displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    url: 'https://bit.ly/3c0WJz9'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    phoneNumber: '+62 819-4604-5315'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
+                                    displayText: 'Sewa Mark Bot',
+                                    id: 'sewabot'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1209,8 +1261,8 @@ break
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
+                                    displayText: 'Menu Mark',
+                                    id: 'menu'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
