@@ -535,21 +535,6 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }, 60000), poin, poin_lose, timeout
             }
             }
-            break
-            case 'rafganz': { 
-                let sections = [
-                {
-                title: "CHANGE EPHEMERAL GROUP",
-                rows: [
-                {title: "Ephemeral 1 day", rowId: `ephemeral 1`, description: `Activate the ephemeral group for 1 day`},
-                {title: "Ephemeral 7 day's", rowId: `ephemeral 7`, description: `Activate the ephemeral group for 7 day's`},
-                {title: "Ephemeral 90 days's", rowId: `ephemeral 90`, description: `Activate the ephemeral group for 90 day's`},
-                {title: "Ephemeral Off", rowId: `ephemeral off`, description: `Deactivate this Ephemeral group`}
-                ]
-                },
-                ]
-                hisoka.sendListMsg(m.chat, `Please select the following Ephemeral Options List !`, hisoka.user.name, `Hello Admin ${groupMetadata.subject}`, `Click Here`, sections, m)
-                }
             }
             break
             case 'huu': case 'anjay': case 'iya': { 
@@ -2791,6 +2776,60 @@ let capt = `⭔ Title: ${judul}
                 ]
                 hisoka.sendListMsg(m.chat, `Please select the menu you want to change!`, hisoka.user.name, `Hello Owner !`, `Click Here`, sections, m)
                 }
+            }
+            break
+            case 'p'
+                anu = `Owner Menyediakan :
+-Fixed Eror(Kalau Bisa) 
+-Req Fitur(Kalau Bisa)
+(Khusus Mark Botz) 
+-Jasa Tutorin Run Bot
+-Jasa Run Bot
+-Jasa Scan Session
+(20 Session/5k) 
+
+*All Sosmed Owner :*
+YT : https://bit.ly/3c0WJz9
+IG : https://instagram.com/asyrafsixyouu'
+
+KANDANG BOT : 
+GROUP 1:
+https://bit.ly/3ax9GjJ
+
+GROUP 2:
+https://bit.ly/3yuGWAi
+
+GROUP 3:
+https://bit.ly/3RlgwJQ
+
+Click Tombol Dibawah 
+Untuk Melanjutkan Ke Bagian Menu
+                let btn = [{
+                                urlButton: {
+                                    displayText: '😎Youtube😎',
+                                    url: 'https://bit.ly/3c0WJz9'
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: '😎Group Botz😎',
+                                    url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: '😎Instagram😎',
+                                    url: 'https://instagram.com/asyrafsixyouu'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '🗿Gw Ganteng🗿',
+                                    id: 'anjay'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '🙁Sc Mark Botz🙁',
+                                    id: 'sc'
+                                }
+                            }]
             }
             break
             case 'menu': {
