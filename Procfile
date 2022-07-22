@@ -1,1 +1,1 @@
-worker: node . -- db 'mongodb+srv://wekasenpai:<password>@freecluster.ouhmt.mongodb.net/test'
+worker: node . -- db 'mongodb+srv://wekasenpai:ASYRAF929@freeCluster.axmu8.mongodb.net/?retryWrites=true&w=majority'
