@@ -535,7 +535,6 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }, 60000), poin, poin_lose, timeout
             }
             }
-            }
             break
             case 'huu': case 'anjay': case 'iya': { 
                 hisoka.sendMessage(m.chat, { image: { url: 'https://a.uguu.se/tZcMBvgx.webp' }, caption: `Yg Bener Aja Dek` }, { quoted: m })
