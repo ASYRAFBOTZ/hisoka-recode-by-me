@@ -2767,6 +2767,7 @@ let capt = `⭔ Title: ${judul}
                 ]
                 hisoka.sendListMsg(m.chat, `Please select the menu you want to change!`, hisoka.user.name, `Hello Owner !`, `Click Here`, sections, m)
                 }
+            }
             break
             case 'command': {
                 anu = `┌──⭓ *INFO BOTZ*
