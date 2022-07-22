@@ -164,11 +164,11 @@ async function startHisoka() {
                 if (anu.action == 'add') {
                     hisoka.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}` })
                 } else if (anu.action == 'remove') {
-                    hisoka.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `@${num.split("@")[0]} Leaving To ${metadata.subject}` })
+                    hisoka.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `Good Bye @${num.split("@")[0]}, \nSemoga Tidak Tenang Jasadmu` })
                 } else if (anu.action == 'promote') {
-                    hisoka.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `@${num.split('@')[0]} Promote From ${metadata.subject}` })
+                    hisoka.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `Anjim @${num.split('@')[0]} Di Promote Jadi Admin Mmk, Mana Promote nya Di Gc ${metadata.subject} Lagi` })
                 } else if (anu.action == 'demote') {
-                    hisoka.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `@${num.split('@')[0]} Demote From ${metadata.subject}` })
+                    hisoka.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `Wkwk Kasian @${num.split('@')[0]} Didemote Di ${metadata.subject}` })
               }
             }
         } catch (err) {
