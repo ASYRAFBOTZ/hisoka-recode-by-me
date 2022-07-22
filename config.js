@@ -14,9 +14,10 @@ global.APIs = {
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapis.xyz': 'Your Key', 
+	'https://zenzapis.xyz': 'Your Key',
+}
 
-
+// Other
 global.owner = ['6281946945315','6281946945315','6281946945315','6281946945315']
 global.premium = ['6281946945315']
 global.packname = 'Mark Botz'
