@@ -536,6 +536,22 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             }
             break
+            case 'rafganz': { 
+                let sections = [
+                {
+                title: "CHANGE EPHEMERAL GROUP",
+                rows: [
+                {title: "Ephemeral 1 day", rowId: `ephemeral 1`, description: `Activate the ephemeral group for 1 day`},
+                {title: "Ephemeral 7 day's", rowId: `ephemeral 7`, description: `Activate the ephemeral group for 7 day's`},
+                {title: "Ephemeral 90 days's", rowId: `ephemeral 90`, description: `Activate the ephemeral group for 90 day's`},
+                {title: "Ephemeral Off", rowId: `ephemeral off`, description: `Deactivate this Ephemeral group`}
+                ]
+                },
+                ]
+                hisoka.sendListMsg(m.chat, `Please select the following Ephemeral Options List !`, hisoka.user.name, `Hello Admin ${groupMetadata.subject}`, `Click Here`, sections, m)
+                }
+            }
+            break
             case 'huu': case 'anjay': case 'iya': { 
                 hisoka.sendMessage(m.chat, { image: { url: 'https://a.uguu.se/tZcMBvgx.webp' }, caption: `Yg Bener Aja Dek` }, { quoted: m })
             }
