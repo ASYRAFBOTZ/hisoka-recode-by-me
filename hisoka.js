@@ -102,7 +102,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    } else global.db.data.settings[botNumber] = {
 	    anticall: true,
 		status: 0,
-		autobio: trud,
+		autobio: true,
 		templateImage: true,
 		templateVideo: false,
 		templateGif: false,
@@ -561,11 +561,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6957a88179fe57f1c5577.jpg' }, caption: `DONASI MARK BOT :\nYT : https://bit.ly/3c0WJz9\nDANA : 08564660690\nGOPAY : 081946945315\nPULSA : 085646606905\nPULSA2 : 081946945315\n\nThx Yg Udh Donasi MikAzu Bot😘` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6957a88179fe57f1c5577.jpg' }, caption: `DONASI MARK BOT :\nYT : https://bit.ly/3c0WJz9\nDANA : 08564660690\nGOPAY : 081946945315\nPULSA : 085646606905\nPULSA2 : 081946945315\n\nThx Yg Udh Donasi Mark Bot😘` }, { quoted: m })
             }
             break
 	    case 'sewa': case 'sewabot': case 'buypremium': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/452a56b273df444073566.jpg' }, caption: `SEWA MARK BOTZ :\n5K PERMANEN\\n\nPAYMENT : \nDANA\nPULSA(+5K)` }, { quoted: m }) 
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/452a56b273df444073566.jpg' }, caption: `SEWA MARK BOTZ :\n5K PERMANEN\n\nPAYMENT : \nDANA\nPULSA(+5K)` }, { quoted: m }) 
             }
             break
             case 'sc': {
@@ -3130,27 +3130,27 @@ let capt = `⭔ Title: ${judul}
 └───────⭓` 
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Youtube',
+                                    displayText: '😎Youtube😎',
                                     url: 'https://bit.ly/3c0WJz9'
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'Group Botz',
+                                    displayText: '😎Group Botz😎',
                                     url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'Instagram',
+                                    displayText: '😎Instagram😎',
                                     url: 'https://instagram.com/asyrafsixyouu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Gw Ganteng',
+                                    displayText: '🗿Gw Ganteng🗿',
                                     id: 'anjay'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Sc Mark Botz',
+                                    displayText: '🙁Sc Mark Botz🙁',
                                     id: 'sc'
                                 }
                             }]
