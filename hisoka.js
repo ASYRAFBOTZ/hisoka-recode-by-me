@@ -3142,7 +3142,7 @@ let capt = `⭔ Title: ${judul}
                         if (setbot.templateImage) {
                         hisoka.send5ButImg(m.chat, anu, 'Mark Botz By Asyraf', global.thumb, btn, global.thumb)
                         } else if (setbot.templateGif) {
-                        hisoka.send5ButGif(m.chat, anu, 'Mark Botz By Asyraf' global.visoka, btn, global.thumb)
+                        hisoka.send5ButGif(m.chat, anu, 'Mark Botz By Asyraf', global.visoka, btn, global.thumb)
                         } else if (setbot.templateVid) {
                         hisoka.send5ButVid(m.chat, anu, 'Mark Botz By Asyraf', global.visoka, btn, global.thumb)
                         } else if (setbot.templateMsg) {
