@@ -536,12 +536,16 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             }
             break
-	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 13k Per Group via E-Walet 1 Month\n⭔ 18k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6288292024190 (Owner)\n\nDonate For Me : \n\n⭔ Paypal : https://www.paypal.me/Cakhaho\n⭔ Saweria : https://saweria.co/DikaArdnt` }, { quoted: m })
+	    case 'donasi': case 'donate': {
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6957a88179fe57f1c5577.jpg' }, caption: `DONASI MARK BOT :\nYT : https://bit.ly/3c0WJz9\nDANA : 08564660690\nGOPAY : 081946945315\nPULSA : 085646606905\nPULSA2 : 081946945315\n\nThx Yg Udh Donasi MikAzu Bot😘` }, { quoted: m })
+            }
+            break
+	    case 'sewa': case 'sewabot': case 'buypremium': {
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/452a56b273df444073566.jpg' }, caption: `SEWA MARK BOTZ :\n5K PERMANEN\\n\nPAYMENT : \nDANA\nPULSA(+5K)` }, { quoted: m }) 
             }
             break
             case 'sc': {
-                m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : 6281615075793 (Link Aja)\nSaweria : https://saweria.co/DikaArdnt\nPaypal : https://www.paypal.me/Cakhaho\n\n Dont Forget Donate')
+                m.reply('SCRIP? https://DikaArdnt/Hisoka-Morou\nRECODE : By Asyraf\n\nSc Recode :\nhttps://bit.ly/3c0WJz9')
             }
             break
             case 'chat': {
@@ -1223,23 +1227,23 @@ break
 		for (let yoi of anu) {
 		    await sleep(1500)
 		    let btn = [{
-                                urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                quickReplyButton: {
+                                    displayText: 'Sewa Botz',
+                                    id: 'sewa'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Status Bot',
+                                    displayText: 'Donasi',
+                                    id: 'donasi'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Test Speed',
                                     id: 'ping'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Contact Owner',
+                                    displayText: 'Owner Ganz',
                                     id: 'owner'
                                 }  
                             }, {
@@ -1248,7 +1252,7 @@ break
                                     id: 'sc'
                                 }
                             }]
-                      let txt = `「 Broadcast Bot 」\n\n${text}`
+                      let txt = `「 Broadcast Mark Bot 」\n\n${text}`
                       hisoka.send5ButImg(yoi, txt, hisoka.user.name, global.thumb, btn)
 		}
 		m.reply('Sukses Broadcast')
@@ -2765,6 +2769,8 @@ let capt = `⭔ Title: ${judul}
                 }
             }
             break
+            case 'menu': case 'help' case 'asyrafganz': {
+                anu
             case 'list': case 'menu': case 'help': case '?': {
                 anu = `┌──⭓ *Group Menu*
 │
