@@ -3128,9 +3128,9 @@ let capt = `⭔ Title: ${judul}
                                     url: 'https://instagram.com/asyrafsixyouu'
                                 }
                             }, {
-                                callButton: {
-                                    displayText: 'Owner Ganz',
-                                    phoneNumber: '+62 819-4694-5315'
+                                quickReplyButton: {
+                                    displayText: 'Gw Ganteng',
+                                    id: 'anjay'
                                 }  
                             }, {
                                 quickReplyButton: {
