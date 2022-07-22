@@ -2770,7 +2770,139 @@ let capt = `⭔ Title: ${judul}
             }
             break
             case 'menu': case 'help' case 'asyrafganz': {
-                anu
+                let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                    listMessage :{
+                        title: `${ucapanWaktu} ${pushname}\n\nJika Kamu Menemukan Kesalahan Jangan Nanya Ke owner, Mungkin Itu gara² Lu Sendiri\n`,
+                        description: "*Klik Tombol Dibawah Untuk Melihat Menu Yang Tersedia👇*",
+                        buttonText: "KLIK DISINI",
+                        footerText: "YT : https://bit.ly/3c0WJz9",
+                        listType: "SINGLE_SELECT",
+                        sections: [{
+                                    "title": "All Menu Bot",
+                                    "rows": [
+                                        {
+                                            "title": "All Menu",
+                                            "description": "Menampikan Semua Menu",
+                                            "rowId": `${prefix}menu`
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "List Menu Bot",
+                                    "rows": [
+                                        {
+                                            "title": "Information Of The Bot",
+                                            "description": "Menampilkan infobot Menu",
+                                            "rowId": `${prefix}pakaya`
+                                        },
+                                        {
+                                            "title": "owner Menu",
+                                            "description": "Menampilkan owner Menu",
+                                            "rowId": `${prefix}ownermenu`
+                                        },
+                                        {
+                                            "title": "Group Menu",
+                                            "description": "Menampilkan Group Menu",
+                                            "rowId": `${prefix}groupmenu`
+                                        },
+                                        {
+                                            "title": "Webzone Menu",
+                                            "description": "Menampilkan Webzone Menu",
+                                            "rowId": `${prefix}webzonemenu`
+                                        },
+                                        {
+                                            "title": "Download Menu",
+                                            "description": "Menampilkan Download Menu",
+                                            "rowId": `${prefix}downloadermenu`
+                                        },
+                                        {
+                                            "title": "Search Menu",
+                                            "description": "Menampilkan Search Menu",
+                                            "rowId": `${prefix}searchmenu`
+                                        },
+                                        {
+                                            "title": "Random Menu",
+                                            "description": "Menampilkan Random Menu",
+                                            "rowId": `${prefix}randommenu`
+                                        },
+                                        {
+                                            "title": "Text Pro Menu",
+                                            "description": "Menampilkan Text Pro Menu",
+                                            "rowId": `${prefix}textpromenu`
+                                        },
+                                        {
+                                            "title": "Photo Oxy Menu",
+                                            "description": "Menampilkan Photo Oxy Menu",
+                                            "rowId": `${prefix}photooxymenu`
+                                        },
+                                        {
+                                            "title": "Ephoto Menu",
+                                            "description": "Menampilkan Ephoto Menu",
+                                            "rowId": `${prefix}ephotomenu`
+                                        },
+                                        
+                                        
+                                        {
+                                            "title": "Convert Menu",
+                                            "description": "Menampilkan Convert Menu",
+                                            "rowId": `${prefix}convertmenu`
+                                        },
+                                        {
+                                            "title": "Main Menu",
+                                            "description": "Menampilkan Main Menu",
+                                            "rowId": `${prefix}mainmenu`
+                                        },
+                                        {
+                                            "title": "Database Menu",
+                                            "description": "Menampilkan Database Menu",
+                                            "rowId": `${prefix}databasemenu`
+                                        },
+                                      
+                                      
+                                        {
+                                            "title": "Voice Changer",
+                                            "description": "Menampilkan Voice Changer Menu",
+                                            "rowId": `${prefix}voicechangermenu`
+                                        }
+                                            ]
+                                            },
+                                {
+                                    "title": "Owner🗿",
+                                    "rows": [
+                                        {
+                                            "title": "Creator",
+                                            "description": "Menampilkan Nomor Creator",
+                                            "rowId": `${prefix}owner`
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Sewabot🤖",
+                                    "rows": [
+                                        {
+                                            "title": "Sewabot",
+                                            "description": "Menampilkan List Sewabot",
+                                            "rowId": `${prefix}sewabot`
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Thanks To👑",
+                                    "rows": [
+                                        {
+                                            "title": "Contributor",
+                                            "description": "Menampilkan Ungkapan Terima Kasih",
+                                            "rowId": `${prefix}contributor`
+                                        }
+                                    ]
+                                }
+                            ],
+              listType: 1
+                    }
+                }), { userJid: m.chat, quoted: m })
+                hisoka.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                }
+                       
             case 'list': case 'menu': case 'help': case '?': {
                 anu = `┌──⭓ *Group Menu*
 │
