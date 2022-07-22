@@ -1179,7 +1179,7 @@ break
             }
             break
             case 'menu': case 'help': {
-                anu = `Hy ${Pushname}
+                anu = `Hy User Mark Botz
 Saya Mark Botz
 Saya Diciptakan Oleh Asyraf
 Untuk Membantumu
