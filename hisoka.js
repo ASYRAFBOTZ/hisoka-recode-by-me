@@ -536,6 +536,10 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             }
             break
+            case 'tqto': case 'thanksto': {
+                m.reply('Tq To :\n@adiwajshing/baileys\nNurutomo\nMhankbarbar\nFaiz\nGimenz\nRayy\nFatihArridho\nPa7rick\nRidhoUhuy\nzhwzein\nCAF-ID\n\nBintang\nAsyraf (Recorder & Fixer)')
+            }
+            break
 	    case 'donasi': case 'donate': {
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6957a88179fe57f1c5577.jpg' }, caption: `DONASI MARK BOT :\nYT : https://bit.ly/3c0WJz9\nDANA : 08564660690\nGOPAY : 081946945315\nPULSA : 085646606905\nPULSA2 : 081946945315\n\nThx Yg Udh Donasi MikAzu Bot😘` }, { quoted: m })
             }
@@ -545,7 +549,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
             case 'sc': {
-                m.reply('SCRIP? https://DikaArdnt/Hisoka-Morou\nRECODE : By Asyraf\n\nSc Recode :\nhttps://bit.ly/3c0WJz9')
+                m.reply('SCRIP? https://github.com/DikaArdnt/Hisoka-Morou\nRECODE : By Asyraf\n\nSc Recode :\nhttps://bit.ly/3c0WJz9')
             }
             break
             case 'chat': {
@@ -1176,58 +1180,6 @@ break
                 let { chat, fromMe, id, isBaileys } = m.quoted
                 if (!isBaileys) throw 'Pesan tersebut bukan dikirim oleh bot!'
                 hisoka.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
-            }
-            break
-            case 'menu': case 'help': {
-                anu = `Hy User Mark Botz
-Saya Mark Botz
-Saya Diciptakan Oleh Asyraf
-Untuk Membantumu
-Tekan Tombol 'Menu Mark'  Dibawah 
-Untuk Menlanjutkan Ke Menu Mark Botz
-
-*All Sosmed Asyraf :*
-YT :
-https://bit.ly/3c0WJz9
-IG :
-https://instagram.com/asyrafsixyouu
-
-*Group Kandang Bot :*
-
-GROUP 1:
-https://bit.ly/3ax9GjJ
-
-GROUP 2:
-https://bit.ly/3yuGWAi
-
-GROUP 3:
-https://bit.ly/3RlgwJQ`
-                let btn = [{
-                                urlButton: {
-                                    displayText: 'Youtube',
-                                    url: 'https://bit.ly/3c0WJz9'
-                                }
-                            }, {
-                                urlButton: {
-                                    displayText: 'Group Botz',
-                                    url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Owner Ganz',
-                                    id: 'owner'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Menu Mark',
-                                    id: 'command'
-                                }
-                            }]
             }
             break
             case 'bcgc': case 'bcgroup': {
@@ -2821,7 +2773,7 @@ let capt = `⭔ Title: ${judul}
                 }
             }
             break
-            case 'command': {
+            case 'menu': {
                 anu = `┌──⭓ *INFO BOTZ*
 │ ⚙︎ NAME : MARK BOTZ
 │ ⚙︎ MODE : PUBLIC
