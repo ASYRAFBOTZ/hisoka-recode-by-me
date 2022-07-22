@@ -537,7 +537,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
             case 'tqto': case 'thanksto': {
-                m.reply('Tq To :\n@adiwajshing/baileys\nNurutomo\nMhankbarbar\nFaiz\nGimenz\nRayy\nFatihArridho\nPa7rick\nRidhoUhuy\nzhwzein\nCAF-ID\n\nBintang\nAsyraf (Recorder & Fixer)')
+                m.reply('Tq To :\n@adiwajshing/baileys\nNurutomo\nMhankbarbar\nFaiz\nGimenz\nRayy\nFatihArridho\nPa7rick\nRidhoUhuy\nzhwzein\nCAF-ID\n\Bintang\nAsyraf (Recorder & Fixer)')
             }
             break
 	    case 'donasi': case 'donate': {
@@ -2781,7 +2781,6 @@ let capt = `⭔ Title: ${judul}
 │ ⚙︎ FOTAL FITUR : 1+🗿
 ╰──⭓
 
-
 ┌──⭓ *Group Menu*
 │
 │⭔ ${prefix}linkgroup
@@ -3129,7 +3128,7 @@ let capt = `⭔ Title: ${judul}
                             }]
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
-                        hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn, global.thumb)
+                        hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn, glob😭al.thumb)
                         } else if (setbot.templateGif) {
                         hisoka.send5ButGif(m.chat, anu, hisoka.user.name, global.visoka, btn, global.thumb)
                         } else if (setbot.templateVid) {
