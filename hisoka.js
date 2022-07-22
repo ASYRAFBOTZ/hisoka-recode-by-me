@@ -2780,6 +2780,29 @@ let capt = `⭔ Title: ${judul}
 │ ⚙︎ LIBARY : Baileys-Md
 │ ⚙︎ FOTAL FITUR : 1+🗿
 ╰──⭓
+┌──⭓ *Main Menu*
+│
+│⭔ ${prefix}tqto
+│⭔ ${prefix}sc
+│⭔ ${prefix}script
+│⭔ ${prefix}donasi
+│⭔ ${prefix}donate
+│⭔ ${prefix}sewa
+│⭔ ${prefix}sewabot
+│⭔ ${prefix}buypremium
+│⭔ ${prefix}ping
+│⭔ ${prefix}owner
+│⭔ ${prefix}menu / ${prefix}help / ${prefix}?
+│⭔ ${prefix}delete
+│⭔ ${prefix}infochat
+│⭔ ${prefix}quoted
+│⭔ ${prefix}listpc
+│⭔ ${prefix}listgc
+│⭔ ${prefix}listonline
+│⭔ ${prefix}speedtest
+│⭔ ${prefix}speed
+│
+└───────⭓
 
 ┌──⭓ *Group Menu*
 │
@@ -3022,21 +3045,6 @@ let capt = `⭔ Title: ${judul}
 │
 └───────⭓
 
-┌──⭓ *Main Menu*
-│
-│⭔ ${prefix}ping
-│⭔ ${prefix}owner
-│⭔ ${prefix}menu / ${prefix}help / ${prefix}?
-│⭔ ${prefix}delete
-│⭔ ${prefix}infochat
-│⭔ ${prefix}quoted
-│⭔ ${prefix}listpc
-│⭔ ${prefix}listgc
-│⭔ ${prefix}listonline
-│⭔ ${prefix}speedtest
-│
-└───────⭓
-
 ┌──⭓ *Database Menu*
 │
 │⭔ ${prefix}setcmd
@@ -3111,19 +3119,19 @@ let capt = `⭔ Title: ${judul}
                                     url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
                                 }
                             }, {
-                                quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
+                                urlButton: {
+                                    displayText: 'Instagram',
+                                    url: 'https://instagram.com/asyrafsixyouu'
                                 }
                             }, {
-                                quickReplyButton: {
+                                urlButton: {
                                     displayText: 'Owner Ganz',
-                                    id: 'owner'
+                                    url: 'https://wa.me/6281946945315'
                                 }  
                             }, {
-                                quickReplyButton: {
+                                urlButton: {
                                     displayText: 'Sc Mark Botz',
-                                    id: 'sc'
+                                    url: 'https://bit.ly/3c0WJz9'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
