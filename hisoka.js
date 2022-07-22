@@ -102,7 +102,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    } else global.db.data.settings[botNumber] = {
 	    anticall: true,
 		status: 0,
-		autobio: false,
+		autobio: trud,
 		templateImage: true,
 		templateVideo: false,
 		templateGif: false,
@@ -3124,14 +3124,14 @@ let capt = `⭔ Title: ${judul}
                                     url: 'https://instagram.com/asyrafsixyouu'
                                 }
                             }, {
-                                urlButton: {
+                                Button: {
                                     displayText: 'Owner Ganz',
-                                    url: 'https://wa.me/6281946945315'
+                                    id: 'owner'
                                 }  
                             }, {
-                                urlButton: {
+                                quickReplyButton: {
                                     displayText: 'Sc Mark Botz',
-                                    url: 'https://bit.ly/3c0WJz9'
+                                    id: 'sc'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
