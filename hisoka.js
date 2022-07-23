@@ -444,14 +444,14 @@ Selama ${clockString(new Date - user.afkTime)}`)
         }
 	    
         switch(command) {
-	    case '${prefix}afk': {
+	    case 'afk': {
                 let user = global.db.data.users[m.sender]
                 user.afkTime = + new Date
                 user.afkReason = text
                 m.reply(`${m.pushName} Telah Afk${text ? ': ' + text : ''}`)
             }
             break	
-        case '${prefix}ttc': case '${prefix}ttt': case '${prefix}tictactoe': {
+        case 'ttc': case 'ttt': case 'tictactoe': {
             let TicTacToe = require("./lib/tictactoe")
             this.game = this.game ? this.game : {}
             if (Object.values(this.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw 'Kamu masih didalam game'
@@ -501,7 +501,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             }
             }
             break
-            case '${prefix}delttc': case '${prefix}delttt': {
+            case 'delttc': case '${prefix}delttt': {
             let roomnya = Object.values(this.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))
             if (!roomnya) throw `Kamu sedang tidak berada di room tictactoe !`
             delete this.game[roomnya.id]
@@ -536,27 +536,27 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             }
             break
-            case '${prefix}huu': case '${prefix}anjay': case '${prefix}iya': { 
+            case 'huu': case 'anjay': case 'iya': { 
                 hisoka.sendMessage(m.chat, { image: { url: 'https://a.uguu.se/tZcMBvgx.webp' }, caption: `Yg Bener Aja Dek` }, { quoted: m })
             }
             break
-            case '${prefix}tqto': case '${prefix}thanksto': {
+            case 'tqto': case 'thanksto': {
                 m.reply('Tq To :\n@adiwajshing/baileys\nNurutomo\nMhankbarbar\nFaiz\nGimenz\nRayy\nFatihArridho\nPa7rick\nRidhoUhuy\nzhwzein\nCAF-ID\n\Bintang\nAsyraf (Recorder & Fixer)')
             }
             break
-	    case '${prefix}donasi': case '${prefix}donate': {
+	    case 'donasi': case 'donate': {
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6957a88179fe57f1c5577.jpg' }, caption: `DONASI MARK BOT :\nYT : https://bit.ly/3c0WJz9\nDANA : 08564660690\nGOPAY : 081946945315\nPULSA : 085646606905\nPULSA2 : 081946945315\n\nThx Yg Udh Donasi Mark Bot😘` }, { quoted: m })
             }
             break
-	    case '${prefix}sewa': case '${prefix}sewabot': case '${prefix}buypremium': {
+	    case 'sewa': case 'sewabot': case 'buypremium': {
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/452a56b273df444073566.jpg' }, caption: `SEWA MARK BOTZ :\n5K PERMANEN\n\nPAYMENT : \nDANA\nPULSA(+5K)` }, { quoted: m }) 
             }
             break
-            case '${prefix}sc': {
+            case 'sc': {
                 m.reply('SCRIPT? https://github.com/DikaArdnt/Hisoka-Morou\nRECODE : By Asyraf\n\nSc Recode :\nhttps://bit.ly/3c0WJz9')
             }
             break
-            case '${prefix}chat': {
+            case 'chat': {
                 if (!isCreator) throw mess.owner
                 if (!q) throw 'Option : 1. mute\n2. unmute\n3. archive\n4. unarchive\n5. read\n6. unread\n7. delete'
                 if (args[0] === 'mute') {
@@ -2478,13 +2478,13 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                         },
                     }
                     let buttons = [
-                        { buttonId: '.keluar', buttonText: { displayText: 'Stop' }, type: 1 }
+                        { buttonId: 'keluar', buttonText: { displayText: 'Stop' }, type: 1 }
                     ]
                     await hisoka.sendButtonText(m.chat, buttons, `\`\`\`Mohon Tunggu Sedang Mencari Partner\`\`\``, hisoka.user.name, m)
                 }
                 break
             }
-            case '${prefix}next': case '${prefix}lanjut': {
+            case 'next': case 'lanjut': {
                 if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
                 let romeo = Object.values(db.data.anonymous).find(room => room.check(m.sender))
                 if (!romeo) {
@@ -2500,8 +2500,8 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 let room = Object.values(db.data.anonymous).find(room => room.state === 'WAITING' && !room.check(m.sender))
                 if (room) {
                     let buttons = [
-                        { buttonId: '.next', buttonText: { displayText: 'Skip' }, type: 1 },
-                        { buttonId: '.keluar', buttonText: { displayText: 'Stop' }, type: 1 }
+                        { buttonId: 'next', buttonText: { displayText: 'Skip' }, type: 1 },
+                        { buttonId: 'keluar', buttonText: { displayText: 'Stop' }, type: 1 }
                     ]
                     await hisoka.sendButtonText(room.a, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, hisoka.user.name, m)
                     room.b = m.sender
@@ -2528,19 +2528,19 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 }
                 break
             }
-            case '${prefix}public': {
+            case 'public': {
                 if (!isCreator) throw mess.owner
                 hisoka.public = true
                 m.reply('Sukse Change To Public Usage')
             }
             break
-            case '${prefix}self': {
+            case 'self': {
                 if (!isCreator) throw mess.owner
                 hisoka.public = false
                 m.reply('Sukses Change To Self Usage')
             }
             break
-            case '${prefix}ping': case '${prefix}botstatus': case '${prefix}statusbot': {
+            case 'ping': case 'botstatus': case 'statusbot': {
                 const used = process.memoryUsage()
                 const cpus = os.cpus().map(cpu => {
                     cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
@@ -2604,11 +2604,11 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             }
             break
-            case '${prefix}owner': case '${prefix}creator': {
+            case 'owner': case 'creator': {
                 hisoka.sendContact(m.chat, global.owner, m)
             }
             break
-            case '${prefix}playstore': {
+            case 'playstore': {
             if (!text) throw `Example : ${prefix + command} clash of clans`
             let res = await fetchJson(api('lolhuman', '/webzone/playstore', { query: text }, 'apikey'))
             let teks = `⭔ Playstore Search From : ${text}\n\n`
@@ -2621,7 +2621,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             m.reply(teks)
             }
             break
-            case '${prefix}gsmarena': {
+            case 'gsmarena': {
             if (!text) throw `Example : ${prefix + command} samsung`
             let res = await fetchJson(api('lolhuman', '/webzone/gsmarena', { query: text }, 'apikey'))
             let { judul, rilis, thumb, ukuran, type, storage, display, inchi, pixel, videoPixel, ram, chipset, batrai, merek_batre, detail } = res.result
@@ -2642,7 +2642,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, thumb, capt, m)
             }
             break
-            case '${prefix}jadwalbioskop': {
+            case 'jadwalbioskop': {
             if (!text) throw `Example: ${prefix + command} jakarta`
             let res = await fetchJson(api('lolhuman', '/webzone/jadwalbioskop', { kota: text }, 'apikey'))
             let capt = `Jadwal Bioskop From : ${text}\n\n`
@@ -2654,7 +2654,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, res.result[0].thumb, capt, m)
             }
             break
-            case '${prefix}nowplayingbioskop': {
+            case 'nowplayingbioskop': {
             let res = await fetchJson(api('lolhuman', '/webzone/nowplayingbioskop', {}, 'apikey'))
             let capt = `Now Playing Bioskop\n\n`
             for (let i of res.result){
@@ -2665,7 +2665,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, res.result[0].img, capt, m)
             }
             break
-            case '${prefix}aminio': {
+            case 'aminio': {
             if (!text) throw `Example: ${prefix + command} free fire`
             let res = await fetchJson(api('lolhuman', '/webzone/amino', { query: text }, 'apikey'))
             let capt = `Aminio Search From : ${text}\n\n`
@@ -2679,7 +2679,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, 'https://'+res.result[0].community_thumb, capt, m)
             }
             break
-            case '${prefix}wattpad': {
+            case 'wattpad': {
             if (!text) throw `Example : ${prefix + command} love`
             let res = await fetchJson(api('lolhuman', '/webzone/wattpad', { query: text }, 'apikey'))
             let { judul, dibaca, divote, bab, waktu, url, thumb, description } = res.result[0]
@@ -2694,7 +2694,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, thumb, capt, m)
             }
             break
-            case '${prefix}webtoons': {
+            case 'webtoons': {
             if (!text) throw `Example : ${prefix + command} love`
             let res = await fetchJson(api('lolhuman', '/webzone/webtoons', { query: text }, 'apikey'))
             let capt = `Webtoons Search From : ${text}\n\n`
@@ -2708,7 +2708,7 @@ let capt = `⭔ Title: ${judul}
             m.reply(capt)
             }
             break
-            case '${prefix}drakor': {
+            case 'drakor': {
             if (!text) throw `Example : ${prefix + command} love`
             let res = await fetchJson(api('lolhuman', '/webzone/drakor', { query: text }, 'apikey'))
             let capt = `Drakor Search From : ${text}\n\n`
@@ -2722,7 +2722,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, res.result[0].thumbnail, capt, m)
             }
             break
-            case '${prefix}setmenu': {
+            case 'setmenu': {
             if (!isCreator) throw mess.owner
             let setbot = db.data.settings[botNumber]
                if (args[0] === 'templateImage'){
@@ -2777,7 +2777,7 @@ let capt = `⭔ Title: ${judul}
                 }
             }
             break
-            case '${prefix}menu' :{
+            case 'menu' :{
                 anu = `Owner Menyediakan
 -Fixed Eror(Kalau Bisa) 
 -Req Fitur(Kalau Bisa)
@@ -2810,7 +2810,7 @@ Untuk Melanjutkan Ke Bagian Menu`
                 await hisoka.sendButtonText(m.chat, buttons, `Owner Menyediakan :\n-Fixed Eror(Kalau Bisa)\n-Req Fitur(Kalau Bisa)(Khusus Mark Botz)\n-Jasa Tutorin Run Bot\n-Jasa Run Bot\n-Jasa Scan Session(20 Session/5k)\n\n*All Sosmed Owner :*\n\nYT :\nhttps://bit.ly/3c0WJz9\nIG :\nhttps://instagram.com/asyrafsixyouu\n\nKANDANG BOT : \nGROUP 1:\nhttps://bit.ly/3ax9GjJ\n\nGROUP 2:\nhttps://bit.ly/3yuGWAi\n\nGROUP 3:\nhttps://bit.ly/3RlgwJQ\n\nClick Tombol Dibawah\nUntuk Melanjutkan\nKe Bagian Menu`, hisoka.user.name, m) 
             } 
             break
-            case '${prefix}command': {
+            case 'command': {
                 anu = `┌──⭓ *INFO BOTZ*
 │ ⚙︎ NAME : MARK BOTZ
 │ ⚙︎ MODE : PUBLIC
