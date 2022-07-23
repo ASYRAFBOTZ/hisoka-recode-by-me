@@ -2587,7 +2587,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 m.reply(respon)
             }
             break
-            case '${prefix}speedtest': {
+            case 'speedtest': {
             m.reply('Testing Speed...')
             let cp = require('child_process')
             let { promisify } = require('util')
@@ -2804,8 +2804,11 @@ https://bit.ly/3RlgwJQ
 Click Tombol Dibawah 
 Untuk Melanjutkan Ke Bagian Menu`
                 let buttons = [ 
-                    { buttonId: 'command', buttonText: { displayText: 'MENU' }, type: 1 }, 
-                    { buttonId: 'owner', buttonText: { displayText: 'OWNER' }, type: 1 }
+                    { buttonId: 'owner', buttonText: { displayText: 'OWNER' }, type: 1 }, 
+                    { buttonId: 'ping', buttonText: { displayText: 'PING' }, type: 1 }, 
+                    { buttonId: 'speedtest', buttonText: { displayText: 'SPEED' }, type: 1 }, 
+                    { buttonId: 'sewa', buttonText: { displayText: 'SEWA' }, type: 1 }, 
+                    { buttonId: 'command, buttonText: { displayText: 'MENU' }, type: 1 }
                 ]
                 await hisoka.sendButtonText(m.chat, buttons, `Owner Menyediakan :\n-Fixed Eror(Kalau Bisa)\n-Req Fitur(Kalau Bisa)(Khusus Mark Botz)\n-Jasa Tutorin Run Bot\n-Jasa Run Bot\n-Jasa Scan Session(20 Session/5k)\n\n*All Sosmed Owner :*\n\nYT :\nhttps://bit.ly/3c0WJz9\nIG :\nhttps://instagram.com/asyrafsixyouu\n\nKANDANG BOT : \nGROUP 1:\nhttps://bit.ly/3ax9GjJ\n\nGROUP 2:\nhttps://bit.ly/3yuGWAi\n\nGROUP 3:\nhttps://bit.ly/3RlgwJQ\n\nClick Tombol Dibawah\nUntuk Melanjutkan\nKe Bagian Menu`, hisoka.user.name, m) 
             } 
