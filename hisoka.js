@@ -1,4 +1,4 @@
-/**
+🗿/**
    * Create By Dika Ardnt.
    * Contact Me on wa.me/6288292024190
    * Follow https://github.com/DikaArdnt
@@ -541,7 +541,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
             case 'gas': case 'yok': case 'ayok': case 'gasyok': case 'ayok aja': {
-                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./stiker.webp'), m, { packname: global.packname, author: global.author })
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./ajak.webp'), m, { packname: global.packname, author: global.author })
             }
             break
             case 'kasian': case 'ga': case 'g': case 'gak': case 'gk': {
