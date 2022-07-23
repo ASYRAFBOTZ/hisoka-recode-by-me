@@ -21,7 +21,7 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315']
+global.owner = ['6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315']
 global.premium = ['6281946945315']
 global.packname = 'Mark Botz'
 global.author = 'By Asyraf'
@@ -29,15 +29,15 @@ global.sessionName = 'hisoka'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
-    success: '✓ Success',
-    admin: 'Fitur Khusus Admin Group!',
-    botAdmin: 'Bot Harus Menjadi Admin Terlebih Dahulu!',
-    owner: 'Fitur Khusus Owner Bot',
+    success: 'Succes Menghack Kontol Bapak Mu Pakai Terus😊',
+    admin: 'Lu Cuman Member Ya Kntl😌',
+    botAdmin: 'Bot Bukan Admin Ya Tolol😊',
+    owner: '──Akses Ditolak──\n│Fitur Khusus Owner Ayank Asyraf😘',
     group: 'Fitur Digunakan Hanya Untuk Group!',
-    private: 'Fitur Digunakan Hanya Untuk Private Chat!',
+    private: 'Fitur Khusus Di PC Ya Tolol😊',
     bot: 'Fitur Khusus Pengguna Nomor Bot',
-    wait: 'Loading...',
-    endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12',
+    wait: 'Menghack Langit..',
+    endLimit: 'Limit Lu Udh Habis Tolol😊, Limit Akan Direset Setiap Jam 12',
 }
 global.limitawal = {
     premium: "Infinity",
