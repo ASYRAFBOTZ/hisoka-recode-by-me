@@ -564,10 +564,6 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./gpeduli.webp'), m, { packname: global.packname, author: global.author })
             }
             break
-            case 'donasi': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/1092bc60d87cdcf32caff.jpg' caption: 'Donasi Mark Botz\n\nDana : 085646606905\nGopay : 081946945315\nPulsa : 081946945315\nPulsa2 : 085646606905' } }, { quoted: m })
-            }
-            break
             case 'huu': case 'anjay': case 'iya': { 
                 hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./anjay.webp'), m, { packname: global.packname, author: global.author })
             }
@@ -2820,9 +2816,9 @@ https://bit.ly/3RlgwJQ
 Click Tombol Dibawah 
 Untuk Melanjutkan Ke Bagian Menu`
                 let buttons = [ 
-                    { buttonId: 'owner', buttonText: { displayText: '🗿OWNER GANZ🗿' }, type: 1 }, 
-                    { buttonId: 'sewa', buttonText: { displayText: '💰SEWA BOTZ💰' }, type: 1 }, 
-                    { buttonId: 'command', buttonText: { displayText: '😎MENU TOD😎' }, type: 1 }
+                    { buttonId: 'owner', buttonText: { displayText: '😎OWNER GANZ😎' }, type: 1 }, 
+                    { buttonId: 'anjay', buttonText: { displayText: '🗿GW OWNERNYA🗿' }, type: 1 }, 
+                    { buttonId: 'command', buttonText: { displayText: '🤗MENU TOD🤗' }, type: 1 }
                 ]
                 await hisoka.sendButtonText(m.chat, buttons, `Owner Menyediakan :\n-Fixed Eror(Kalau Bisa)\n-Req Fitur(Kalau Bisa)(Khusus Mark Botz)\n-Jasa Tutorin Run Bot\n-Jasa Run Bot\n-Jasa Scan Session(20 Session/5k)\n\n*All Sosmed Owner :*\n\nYT :\nhttps://bit.ly/3c0WJz9\nIG :\nhttps://instagram.com/asyrafsixyouu\n\nKANDANG BOT : \nGROUP 1:\nhttps://bit.ly/3ax9GjJ\n\nGROUP 2:\nhttps://bit.ly/3yuGWAi\n\nGROUP 3:\nhttps://bit.ly/3RlgwJQ\n\nClick Tombol Dibawah\nUntuk Melanjutkan\nKe Bagian Menu`, 'Promoted By Asyraf', m) 
             } 
@@ -3185,8 +3181,8 @@ Untuk Melanjutkan Ke Bagian Menu`
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Sc Mark Botz',
-                                    id: 'sc'
+                                    displayText: 'File Bokep',
+                                    id: 'bkp'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
