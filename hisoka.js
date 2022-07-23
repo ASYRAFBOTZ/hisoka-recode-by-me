@@ -553,7 +553,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
             case 'ikutt': case 'ikutbg': case 'ikut bg': case 'ikutbang': case 'ikutbg': case 'ikutbh': case 'ikut bh': case 'ikutbanh': case 'ikut banh': case 'gw ikut bg': case 'gw ikut': case 'ikut gw bg': {
-                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./gpeduli.webp'), m, { packname: global.packname, author: global.author })
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./ikutbg.webp'), m, { packname: global.packname, author: global.author })
             }
             break
             case 'bkp': case 'bokep': case 'bagibkp': case 'bagibokep': case 'bgbkp': case 'bgbokep': case 'bagibkp': case 'bagibokep': case 'bgbkpbg': case 'bgbokepbg': case 'bgbokepbang': case 'bagibokepbg': case 'bagibokepbang': case 'bagi bokep bg': case 'bg bkp bg': case 'bagi bkp bg': case 'bgi bkp bg': case 'bg bokep bg': case 'bgi bokep bg': case 'bagi bokep bg': case 'bg bokep bang': case 'bgi bokep bang': case 'bagi bokep bang': case 'filebokep': {
