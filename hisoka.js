@@ -549,7 +549,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
             case 'rt': case 'runtime': {   
-                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0fbb57805fd8bfe5eeee3.jpg }, caption: `RUNTIME MARK BOTZ : ${runtime(uptime)}` }, { quoted: m })           
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0fbb57805fd8bfe5eeee3.jpg }, caption: `RUNTIME MARK BOTZ : ${runtime(uptime)}` }, { quoted: m })           
             }
             break
             case 'tqto': case 'thanksto': {
