@@ -546,14 +546,10 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
             case 'huu': case 'anjay': case 'iya': { 
                 hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./stiker.webp'), m, { packname: global.packname, author: global.author })
-           }
+            }
             break
             case 'rt': case 'runtime': {   
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0fbb57805fd8bfe5eeee3.jpg' }, caption: `RUNTIME MARK BOTZ :\nEROR BG }, { quoted: m })           
-            }
-            break
-            case 'rules': case 'peraturan': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/397e8375e7a1f2cd4cb4e.jpg' }, caption: `Rules Mark Botz :\n\n-No Spam Mark Botz\n-No Call Mark Botz\n-No Ngejek" Mark Botz\n\nHukuman?Ban+Block+Ban+Denda+Fixed My Bot+Denda+++Denda 7M+++Cipok Ama Ragil🗿` }, { quoted: m })
             }
             break
 	    case 'donasi': case 'donate': {
