@@ -1405,7 +1405,7 @@ break
 	        await fs.unlinkSync(FaTiH)
             }
 	       break     
-	        case 'simi' case 'simih': case 'simisimi': {
+	        case 'simi': case 'simih': case 'simisimi': {
             if (!text) throw `Example : ${prefix + command} text`
             hm = await fetchJson(api('0'lolhuman, '/api/simisimi', { text : text }, 'apikey'))
             m.reply(hm.result.message)
