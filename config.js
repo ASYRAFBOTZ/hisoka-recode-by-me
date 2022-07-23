@@ -1,6 +1,9 @@
 /**
    * Create By Dika Ardnt.
-   * Contact Me on wa.me/6288292024190
+   * Recode By Asyraf
+   * Contact Dika wa.me/6288292024190
+   * Contact Asyraf wa.me/6281946945315
+   * Subscribe YT : MikAzu 929
    * Follow https://github.com/DikaArdnt
 */
 
@@ -9,16 +12,16 @@ const chalk = require('chalk')
 
 // Website Api
 global.APIs = {
-	zenz: 'https://zenzapis.xyz',
+	lolhuman: 'https://lolhuman.xyz',
 }
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapis.xyz': 'Your Key',
+	'https://lolhuman.xyz': 'Lucky44',
 }
 
 // Other
-global.owner = ['6281946945315','6281946945315','6281946945315','6281946945315']
+global.owner = ['6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315','6281946945315']
 global.premium = ['6281946945315']
 global.packname = 'Mark Botz'
 global.author = 'By Asyraf'
