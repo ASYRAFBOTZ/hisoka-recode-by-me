@@ -536,12 +536,20 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             }
             break
-            case '@Mark Botz': case '@+62 856-4660-6905': {
+            case '@': {
                 hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./tagbot.webp'), m, { packname: global.packname, author: global.author })
             }
             break
-            case '@+62 819-4694-5315': case '@YT : M  i k A z u  929': {
-                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./tagowner.webp'), m, { packname: global.packname, author: global.author })
+            case 'gas': case 'yok': case 'ayok': case 'gasyok': case 'ayok aja': {
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./stiker.webp'), m, { packname: global.packname, author: global.author })
+            }
+            break
+            case 'kasian': case 'ga': case 'g': case 'gak': case 'gk': {
+                
+            }
+            break
+            case 'donasi': case '@YT : M  i k A z u  929': {
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/1092bc60d87cdcf32caff.jpg' caption: 'Donasi Mark Botz\n\nDana : 085646606905\nGopay : 081946945315\nPulsa : 081946945315\nPulsa2 : 085646606905' } }, { quoted: m })
             }
             break
             case 'huu': case 'anjay': case 'iya': { 
