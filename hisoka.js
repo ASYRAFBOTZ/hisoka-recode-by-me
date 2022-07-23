@@ -549,7 +549,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
             case 'rt': case 'runtime': {   
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0fbb57805fd8bfe5eeee3.jpg }, caption: `RUNTIME MARK BOTZ : ${runtime(uptime)}` }, { quoted: m })           
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0fbb57805fd8bfe5eeee3.jpg' }, caption: `RUNTIME MARK BOTZ : ${runtime(uptime)}`)` }, { quoted: m })           
             }
             break
             case 'tqto': case 'thanksto': {
@@ -558,6 +558,8 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
             case 'rules': case 'peraturan': {
                  hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/397e8375e7a1f2cd4cb4e.jpg' }, caption: `Rules Mark Botz :\n\n-No Spam Mark Botz\n-No Call Mark Botz\n-No Ngejek" Mark Botz\n\nHukuman?Ban+Block+Ban+Denda+Fixed My Bot+Denda+++Denda 7M+++Cipok Ama Ragil🗿` }, { quoted: m })
+            }
+            break
 	    case 'donasi': case 'donate': {
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6957a88179fe57f1c5577.jpg' }, caption: `DONASI MARK BOT :\nYT : https://bit.ly/3c0WJz9\nDANA : 08564660690\nGOPAY : 081946945315\nPULSA : 085646606905\nPULSA2 : 081946945315\n\nThx Yg Udh Donasi Mark Bot😘` }, { quoted: m })
             }
