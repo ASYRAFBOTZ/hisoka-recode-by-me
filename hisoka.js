@@ -103,11 +103,11 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    anticall: true,
 		status: 0,
 		autobio: true,
-		templateImage: true,
+		templateImage: false,
 		templateVideo: false,
 		templateGif: false,
 		templateMsg: false,
-		templateLocation: false,
+		templateLocation: true,
 	    }
 	    
         } catch (err) {
@@ -538,37 +538,28 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
             case 'huu': case 'anjay': case 'iya': { 
                 hisoka.sendMessage(m.chat, { image: { url: 'https://a.uguu.se/tZcMBvgx.webp' }, caption: `Yg Bener Aja Dek` }, { quoted: m })
-            let buttons = [
-                        { buttonId: 'iya', buttonText: { displayText: 'IYA BENER' }, type: 1 },
-                        { buttonId: 'menu', buttonText: { displayText: 'MENU TOD' }, type: 1 }
-                    ]
-                    await hisoka.sendButtonText(room.a, buttons, `Yg Bener Aja Dek`, hisoka.user.name, m)
+            }
+            break
+            case 'rt': case 'runtime': {   
+                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0fbb57805fd8bfe5eeee3.jpg }, caption: `RUNTIME MARK BOTZ : ${runtime(uptime)}` }, { quoted: m })           
             }
             break
             case 'tqto': case 'thanksto': {
-                m.reply('Tq To :\n@adiwajshing/baileys\nNurutomo\nMhankbarbar\nFaiz\nGimenz\nRayy\nFatihArridho\nPa7rick\nRidhoUhuy\nzhwzein\nCAF-ID\n\Bintang\nAsyraf (Recorder & Fixer)')
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/f5ca2b65f1b90aa8c4c37.jpg' }, caption: `Tq To :\n@adiwajshing/baileys\nNurutomo\nMhankbarbar\nFaiz\nGimenz\nRayy\nFatihArridho\nPa7rick\nRidhoUhuy\nzhwzein\nCAF-ID\n\Bintang\nAsyraf (Recorder & Fixer)` }, { quoted: m })
             }
             break
+            case 'rules': case 'peraturan': {
+                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/397e8375e7a1f2cd4cb4e.jpg' }, caption: `Rules Mark Botz :\n\n-No Spam Mark Botz\n-No Call Mark Botz\n-No Ngejek" Mark Botz\n\nHukuman?Ban+Block+Ban+Denda+Fixed My Bot+Denda+++Denda 7M+++Cipok Ama Ragil🗿` }, { quoted: m })
 	    case 'donasi': case 'donate': {
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6957a88179fe57f1c5577.jpg' }, caption: `DONASI MARK BOT :\nYT : https://bit.ly/3c0WJz9\nDANA : 08564660690\nGOPAY : 081946945315\nPULSA : 085646606905\nPULSA2 : 081946945315\n\nThx Yg Udh Donasi Mark Bot😘` }, { quoted: m })
             }
             break
 	    case 'sewa': case 'sewabot': case 'buypremium': {
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/452a56b273df444073566.jpg' }, caption: `SEWA MARK BOTZ :\n5K PERMANEN\n\nPAYMENT : \nDANA\nPULSA(+5K)` }, { quoted: m }) 
-            let buttons = [
-                        { buttonId: 'owner', buttonText: { displayText: 'LANJUT SEWA' }, type: 1 },
-                        { buttonId: 'menu', buttonText: { displayText: 'MENU MARK' }, type: 1 }
-                    ]
-                    await hisoka.sendButtonText(room.a, buttons, ``, hisoka.user.name, m)
             }
             break
             case 'sc': {
-                m.reply('SCRIPT? https://github.com/DikaArdnt/Hisoka-Morou\nRECODE : By Asyraf\n\nSc Recode :\nhttps://bit.ly/3c0WJz9')
-            let buttons = [
-                        { buttonId: 'owner', buttonText: { displayText: 'OWNER GANZ' }, type: 1 },
-                        { buttonId: 'menu', buttonText: { displayText: 'MENU TOD' }, type: 1 }
-                    ]
-                    await hisoka.sendButtonText(room.a, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, hisoka.user.name, m)                    
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5db686b591f0177b22e98.jpg' }, caption: `Script Mark Botz :\n\nSc Ori/Base :\nhttps://github.com/DikaArdnt/Hisoka-Morou\n\nSc Recode :\nhttps://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V\nSC Dideskripsi` }, { quoted: m })
             }
             break
             case 'chat': {
@@ -2794,7 +2785,7 @@ let capt = `⭔ Title: ${judul}
             break
             case 'menu' :{
                 anu = `Owner Menyediakan
--Fixed Eror(Kalau Bisa) 
+-Fixed Sc Eror(Kalau Bisa) 
 -Req Fitur(Kalau Bisa)
 (Khusus Mark Botz) 
 -Jasa Tutorin Run Bot
@@ -2819,11 +2810,11 @@ https://bit.ly/3RlgwJQ
 Click Tombol Dibawah 
 Untuk Melanjutkan Ke Bagian Menu`
                 let buttons = [ 
-                    { buttonId: 'owner', buttonText: { displayText: '🗿OWNER YANG🗿' }, type: 1 }, 
+                    { buttonId: 'owner', buttonText: { displayText: '🗿OWNER GANZ🗿' }, type: 1 }, 
                     { buttonId: 'sewa', buttonText: { displayText: '💰SEWA BOTZ💰' }, type: 1 }, 
                     { buttonId: 'command', buttonText: { displayText: '😎MENU TOD😎' }, type: 1 }
                 ]
-                await hisoka.sendButtonText(m.chat, buttons, `Owner Menyediakan :\n-Fixed Eror(Kalau Bisa)\n-Req Fitur(Kalau Bisa)(Khusus Mark Botz)\n-Jasa Tutorin Run Bot\n-Jasa Run Bot\n-Jasa Scan Session(20 Session/5k)\n\n*All Sosmed Owner :*\n\nYT :\nhttps://bit.ly/3c0WJz9\nIG :\nhttps://instagram.com/asyrafsixyouu\n\nKANDANG BOT : \nGROUP 1:\nhttps://bit.ly/3ax9GjJ\n\nGROUP 2:\nhttps://bit.ly/3yuGWAi\n\nGROUP 3:\nhttps://bit.ly/3RlgwJQ\n\nClick Tombol Dibawah\nUntuk Melanjutkan\nKe Bagian Menu`, hisoka.user.name, m) 
+                await hisoka.sendButtonText(m.chat, buttons, `Owner Menyediakan :\n-Fixed Eror(Kalau Bisa)\n-Req Fitur(Kalau Bisa)(Khusus Mark Botz)\n-Jasa Tutorin Run Bot\n-Jasa Run Bot\n-Jasa Scan Session(20 Session/5k)\n\n*All Sosmed Owner :*\n\nYT :\nhttps://bit.ly/3c0WJz9\nIG :\nhttps://instagram.com/asyrafsixyouu\n\nKANDANG BOT : \nGROUP 1:\nhttps://bit.ly/3ax9GjJ\n\nGROUP 2:\nhttps://bit.ly/3yuGWAi\n\nGROUP 3:\nhttps://bit.ly/3RlgwJQ\n\nClick Tombol Dibawah\nUntuk Melanjutkan\nKe Bagian Menu`, 'Promoted By Asyraf', m) 
             } 
             break
             case 'command': {
@@ -3164,27 +3155,27 @@ Untuk Melanjutkan Ke Bagian Menu`
 └───────⭓` 
                 let btn = [{
                                 urlButton: {
-                                    displayText: '😎Youtube😎',
+                                    displayText: 'Youtube',
                                     url: 'https://bit.ly/3c0WJz9'
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: '😎Group Botz😎',
+                                    displayText: 'Group Botz',
                                     url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: '😎Instagram😎',
+                                    displayText: 'Instagram',
                                     url: 'https://instagram.com/asyrafsixyouu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🗿Gw Ganteng🗿',
+                                    displayText: 'Gw Ganteng',
                                     id: 'anjay'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🙁Sc Mark Botz🙁',
+                                    displayText: 'Sc Mark Botz',
                                     id: 'sc'
                                 }
                             }]
