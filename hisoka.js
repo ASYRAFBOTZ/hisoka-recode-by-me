@@ -142,7 +142,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    let setting = global.db.data.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await hisoka.setStatus(`${hisoka.user.name} | Runtime : ${runtime(uptime)}`)
+		await hisoka.setStatus(`${hisoka.user.name} By Asyraf | Runtime : ${runtime(uptime)}`)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -534,6 +534,14 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             delete this.suit[id]
             }, 60000), poin, poin_lose, timeout
             }
+            }
+            break
+            case '@Mark Botz': case '@+62 856-4660-6905': {
+                hisoka.sendMessage(m.chat, { image: { url: 'https://file.io/Pl1jyTRKWVdv' }, caption: `Apa Tag²🧐` }, { quoted: m })
+            }
+            break
+            case '@+62 819-4694-5315': case '@YT : M  i k A z u  929': {
+                 hisoka.sendMessage(m.chat, { image: { url: 'https://file.io/eNcG8J1tFOuF' }, caption: `Ada Apa Sih Dek Tag² Owner Gw Lagi Kntl` }, { quoted: m })
             }
             break
             case 'huu': case 'anjay': case 'iya': { 
