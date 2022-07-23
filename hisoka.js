@@ -2522,8 +2522,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                         },
                     }
                     let buttons = [
-                        { buttonId: '
-keluar', buttonText: { displayText: 'Stop' }, type: 1 }
+                        { buttonId: 'keluar', buttonText: { displayText: 'Stop' }, type: 1 }
                     ]
                     await hisoka.sendButtonText(m.chat, buttons, `\`\`\`Mohon Tunggu Sedang Mencari Partner\`\`\``, hisoka.user.name, m)
                 }
