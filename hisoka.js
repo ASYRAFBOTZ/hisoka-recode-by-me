@@ -538,6 +538,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
             case 'huu': case 'anjay': case 'iya': { 
                 hisoka.sendMessage(m.chat, { image: { url: 'https://a.uguu.se/tZcMBvgx.webp' }, caption: `Yg Bener Aja Dek` }, { quoted: m })
+            let buttons = [
+                        { buttonId: 'iya', buttonText: { displayText: 'IYA BENER' }, type: 1 },
+                        { buttonId: 'menu', buttonText: { displayText: 'MENU TOD' }, type: 1 }
+                    ]
+                    await hisoka.sendButtonText(room.a, buttons, `Yg Bener Aja Dek`, hisoka.user.name, m)
             }
             break
             case 'tqto': case 'thanksto': {
@@ -550,10 +555,20 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
 	    case 'sewa': case 'sewabot': case 'buypremium': {
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/452a56b273df444073566.jpg' }, caption: `SEWA MARK BOTZ :\n5K PERMANEN\n\nPAYMENT : \nDANA\nPULSA(+5K)` }, { quoted: m }) 
+            let buttons = [
+                        { buttonId: 'owner', buttonText: { displayText: 'LANJUT SEWA' }, type: 1 },
+                        { buttonId: 'menu', buttonText: { displayText: 'MENU MARK' }, type: 1 }
+                    ]
+                    await hisoka.sendButtonText(room.a, buttons, ``, hisoka.user.name, m)
             }
             break
             case 'sc': {
                 m.reply('SCRIPT? https://github.com/DikaArdnt/Hisoka-Morou\nRECODE : By Asyraf\n\nSc Recode :\nhttps://bit.ly/3c0WJz9')
+            let buttons = [
+                        { buttonId: 'owner', buttonText: { displayText: 'OWNER GANZ' }, type: 1 },
+                        { buttonId: 'menu', buttonText: { displayText: 'MENU TOD' }, type: 1 }
+                    ]
+                    await hisoka.sendButtonText(room.a, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, hisoka.user.name, m)                    
             }
             break
             case 'chat': {
@@ -2804,11 +2819,9 @@ https://bit.ly/3RlgwJQ
 Click Tombol Dibawah 
 Untuk Melanjutkan Ke Bagian Menu`
                 let buttons = [ 
-                    { buttonId: 'owner', buttonText: { displayText: 'OWNER' }, type: 1 }, 
-                    { buttonId: 'ping', buttonText: { displayText: 'PING' }, type: 1 }, 
-                    { buttonId: 'speedtest', buttonText: { displayText: 'SPEED' }, type: 1 }, 
-                    { buttonId: 'sewa', buttonText: { displayText: 'SEWA' }, type: 1 }, 
-                    { buttonId: 'command', buttonText: { displayText: 'MENU' }, type: 1 }
+                    { buttonId: 'owner', buttonText: { displayText: '🗿OWNER YANG🗿' }, type: 1 }, 
+                    { buttonId: 'sewa', buttonText: { displayText: '💰SEWA BOTZ💰' }, type: 1 }, 
+                    { buttonId: 'command', buttonText: { displayText: '😎MENU TOD😎' }, type: 1 }
                 ]
                 await hisoka.sendButtonText(m.chat, buttons, `Owner Menyediakan :\n-Fixed Eror(Kalau Bisa)\n-Req Fitur(Kalau Bisa)(Khusus Mark Botz)\n-Jasa Tutorin Run Bot\n-Jasa Run Bot\n-Jasa Scan Session(20 Session/5k)\n\n*All Sosmed Owner :*\n\nYT :\nhttps://bit.ly/3c0WJz9\nIG :\nhttps://instagram.com/asyrafsixyouu\n\nKANDANG BOT : \nGROUP 1:\nhttps://bit.ly/3ax9GjJ\n\nGROUP 2:\nhttps://bit.ly/3yuGWAi\n\nGROUP 3:\nhttps://bit.ly/3RlgwJQ\n\nClick Tombol Dibawah\nUntuk Melanjutkan\nKe Bagian Menu`, hisoka.user.name, m) 
             } 
