@@ -537,15 +537,15 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
             case '@Mark Botz': case '@+62 856-4660-6905': {
-                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./stiker.webp'), m, { packname: global.packname, author: global.author })
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./tagbot.webp'), m, { packname: global.packname, author: global.author })
             }
             break
             case '@+62 819-4694-5315': case '@YT : M  i k A z u  929': {
-                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./stiker.webp'), m, { packname: global.packname, author: global.author })
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./tagowner.webp'), m, { packname: global.packname, author: global.author })
             }
             break
             case 'huu': case 'anjay': case 'iya': { 
-                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./stiker.webp'), m, { packname: global.packname, author: global.author })
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./anjay.webp'), m, { packname: global.packname, author: global.author })
             }
             break
             case 'chat': {
