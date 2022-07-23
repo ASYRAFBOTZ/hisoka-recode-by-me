@@ -2803,33 +2803,12 @@ https://bit.ly/3RlgwJQ
 
 Click Tombol Dibawah 
 Untuk Melanjutkan Ke Bagian Menu`
-                let btn = [{
-                                urlButton: {
-                                    displayText: '😎Youtube😎',
-                                    url: 'https://bit.ly/3c0WJz9'
-                                }
-                            }, {
-                                urlButton: {
-                                    displayText: '😎Group Botz😎',
-                                    url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
-                                }
-                            }, {
-                                urlButton: {
-                                    displayText: '😎Instagram😎',
-                                    url: 'https://instagram.com/asyrafsixyouu'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '🗿Gw Ganteng🗿',
-                                    id: 'anjay'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '🙁Sc Mark Botz🙁',
-                                    id: 'sc'
-                                }
-                            }]
-            }
+                let buttons = [ 
+                    { buttonId: 'menu', buttonText: { displayText: 'MENU' }, type: 1 }, 
+                    { buttonId: 'owner', buttonText: { displayText: 'OWNER' }, type: 1 }
+                ]
+                await hisoka.sendButtonText(m.chat, buttons, `Menampilkan Menu`, hisoka.user.name, m) 
+            } 
             break
             case 'menu': {
                 anu = `┌──⭓ *INFO BOTZ*
