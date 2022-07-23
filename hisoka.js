@@ -545,15 +545,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
             case 'huu': case 'anjay': case 'iya': { 
-                hisoka.sendMessage(m.chat, { image: { url: 'https://a.uguu.se/tZcMBvgx.webp' }, caption: `Yg Bener Aja Dek` }, { quoted: m })
-            }
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./stiker.webp'), m, { packname: global.packname, author: global.author })
+           }
             break
             case 'rt': case 'runtime': {   
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0fbb57805fd8bfe5eeee3.jpg' }, caption: `RUNTIME MARK BOTZ :\nEROR BG }, { quoted: m })           
-            }
-            break
-            case 'tqto': case 'thanksto': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/f5ca2b65f1b90aa8c4c37.jpg' }, caption: `Tq To :\n@adiwajshing/baileys\nNurutomo\nMhankbarbar\nFaiz\nGimenz\nRayy\nFatihArridho\nPa7rick\nRidhoUhuy\nzhwzein\nCAF-ID\n\Bintang\nAsyraf (Recorder & Fixer)` }, { quoted: m })
             }
             break
             case 'rules': case 'peraturan': {
