@@ -537,31 +537,15 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
             case '@Mark Botz': case '@+62 856-4660-6905': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://file.io/Pl1jyTRKWVdv' }, caption: `Apa Tag²🧐` }, { quoted: m })
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./stiker.webp'), m, { packname: global.packname, author: global.author })
             }
             break
             case '@+62 819-4694-5315': case '@YT : M  i k A z u  929': {
-                 hisoka.sendMessage(m.chat, { image: { url: 'https://file.io/eNcG8J1tFOuF' }, caption: `Ada Apa Sih Dek Tag² Owner Gw Lagi Kntl` }, { quoted: m })
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./stiker.webp'), m, { packname: global.packname, author: global.author })
             }
             break
             case 'huu': case 'anjay': case 'iya': { 
                 hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./stiker.webp'), m, { packname: global.packname, author: global.author })
-            }
-            break
-            case 'rt': case 'runtime': {   
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0fbb57805fd8bfe5eeee3.jpg' }, caption: `RUNTIME MARK BOTZ :\nEROR BG }, { quoted: m })           
-            }
-            break
-	    case 'donasi': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6957a88179fe57f1c5577.jpg' }, caption: `DONASI MARK BOT :\nYT : https://bit.ly/3c0WJz9\nDANA : 08564660690\nGOPAY : 081946945315\nPULSA : 085646606905\nPULSA2 : 081946945315\n\nThx Yg Udh Donasi Mark Bot😘` }, { quoted: m })
-            }
-            break
-	    case 'sewa': case 'sewabot': case 'buypremium': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/452a56b273df444073566.jpg' }, caption: `SEWA MARK BOTZ :\n5K PERMANEN\n\nPAYMENT : \nDANA\nPULSA(+5K)` }, { quoted: m }) 
-            }
-            break
-            case 'sc': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5db686b591f0177b22e98.jpg' }, caption: `Script Mark Botz :\n\nSc Ori/Base :\nhttps://github.com/DikaArdnt/Hisoka-Morou\n\nSc Recode :\nhttps://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V\nSC Dideskripsi` }, { quoted: m })
             }
             break
             case 'chat': {
