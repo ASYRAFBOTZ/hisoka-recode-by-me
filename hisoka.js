@@ -545,10 +545,30 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
             case 'kasian': case 'ga': case 'g': case 'gak': case 'gk': {
-                
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./psad2.webp'), m, { packname: global.packname, author: global.author })    
             }
             break
-            case 'donasi': case '@YT : M  i k A z u  929': {
+            case 'assalamu'alaikum' case 'assalamu'alaikumsalam': case 'assalamualaikum': case 'asalamualaikum': case 'assalamualaikumsalam': case 'assalamualaikum salam': case 'asalamualaikum': case 'asalamualaikum salam': case 'asalamualaikum salam': case 'assalammualaikum': case 'asalammualaikum': case 'asslammualaikumsalam': case 'assalammualaikum salam': {
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./waalaikumsalam.webp'), m, { packname: global.packname, author: global.author })
+            }
+            break
+            case 'p': case 'np lu': case 'np': case 'gj lu': case 'gjlu': case 'gj elu': case 'gjelu': case 'apa sih kon': {
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./psad.webp'), m, { packname: global.packname, author: global.author })
+            }
+            break
+            case 'ikutt': case 'ikutbg': case 'ikut bg': case 'ikutbang': case 'ikutbg': case 'ikutbh': case 'ikut bh': case 'ikutbanh': case 'ikut banh': case 'gw ikut bg': case 'gw ikut': case 'ikut gw bg': {
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./gpeduli.webp'), m, { packname: global.packname, author: global.author })
+            }
+            break
+            case 'bkp': case 'bokep': case 'bagibkp': case 'bagibokep': case 'bgbkp': case 'bgbokep': case 'bagibkp': case 'bagibokep': case 'bgbkpbg': case 'bgbokepbg': case 'bgbokepbang': case 'bagibokepbg': case 'bagibokepbang': case 'bagi bokep bg': case 'bg bkp bg': case 'bagi bkp bg': case 'bgi bkp bg': case 'bg bokep bg': case 'bgi bokep bg': case 'bagi bokep bg': case 'bg bokep bang': case 'bgi bokep bang': case 'bagi bokep bang': case 'filebokep': {
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./bkp.webp'), m, { packname: global.packname, author: global.author })
+            }
+            break
+            case 'bcd': case 'bcod': case 'bacod': case 'lu sp': case 'lusp': case 'lu siapa': case 'lusiapa': case 'g peduli': case 'ga peduli': case 'gak peduli': case 'gk peduli': case 'g pduli': case 'gk pduli': case 'gak pduli': {
+                hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./gpeduli.webp'), m, { packname: global.packname, author: global.author })
+            }
+            break
+            case 'donasi': case 'donate': {
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/1092bc60d87cdcf32caff.jpg' caption: 'Donasi Mark Botz\n\nDana : 085646606905\nGopay : 081946945315\nPulsa : 081946945315\nPulsa2 : 085646606905' } }, { quoted: m })
             }
             break
