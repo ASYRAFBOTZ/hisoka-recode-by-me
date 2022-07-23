@@ -548,7 +548,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./psad2.webp'), m, { packname: global.packname, author: global.author })    
             }
             break
-            case 'assalamu'alaikum' case 'assalamu'alaikumsalam': case 'assalamualaikum': case 'asalamualaikum': case 'assalamualaikumsalam': case 'assalamualaikum salam': case 'asalamualaikum': case 'asalamualaikum salam': case 'asalamualaikum salam': case 'assalammualaikum': case 'asalammualaikum': case 'asslammualaikumsalam': case 'assalammualaikum salam': {
+            case 'assalamu'alaikum': case 'assalamu'alaikumsalam': case 'assalamualaikum': case 'asalamualaikum': case 'assalamualaikumsalam': case 'assalamualaikum salam': case 'asalamualaikum': case 'asalamualaikum salam': case 'asalamualaikum salam': case 'assalammualaikum': case 'asalammualaikum': case 'asslammualaikumsalam': case 'assalammualaikum salam': {
                 hisoka.sendImageAsSticker(m.chat, fs.readFileSync('./waalaikumsalam.webp'), m, { packname: global.packname, author: global.author })
             }
             break
