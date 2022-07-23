@@ -2777,7 +2777,7 @@ let capt = `⭔ Title: ${judul}
                 }
             }
             break
-            case 'p'
+            case 'p' :{
                 anu = `Owner Menyediakan
 -Fixed Eror(Kalau Bisa) 
 -Req Fitur(Kalau Bisa)
